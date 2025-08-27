@@ -26,7 +26,46 @@ public class TestAssertions {
         int expected = 16;
 
         //Actual - let the system perform the 'actual' computation
-        int actual = number1 + number2 + 1;
+        int actual = number1 + number2;
+
+        //Assert - compare 'expected' results with 'actual results'
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    @DisplayName("TC1 - Test quotient")
+    void testQuotient(){
+        //Arrange - define expected inputs and outputs
+        int expected = 3;
+
+        //Actual - let the system perform the 'actual' computation
+        int actual = number1 / number2;
+
+        //Assert - compare 'expected' results with 'actual results'
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    @DisplayName("TC3 - Test difference")
+    void testDifference(){
+        //Arrange - define expected inputs and outputs
+        int expected = 8;
+
+        //Actual - let the system perform the 'actual' computation
+        int actual = number1 - number2;
+
+        //Assert - compare 'expected' results with 'actual results'
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    @DisplayName("TC4 - Test product")
+    void testMultiply(){
+        //Arrange - define expected inputs and outputs
+        int expected = 48;
+
+        //Actual - let the system perform the 'actual' computation
+        int actual = number1 * number2;
 
         //Assert - compare 'expected' results with 'actual results'
         Assertions.assertEquals(expected, actual);
